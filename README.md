@@ -12,7 +12,7 @@
 
 Clone the repository
 
-git clone https://github.com/your-username/guess-number-game.git
+git clone https://github.com/rudra1805/Random_Guess_Game?tab=readme-ov-file
 cd guess-number-game
 
 
