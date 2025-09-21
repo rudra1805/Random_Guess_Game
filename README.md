@@ -1,41 +1,56 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-int main()
-{
-    int random, guess;
-    int no_of_guess;
-    srand(time(NULL));
+✨ Features
 
-    printf("Welcome to the world of Guessing Number.\n");
-    random = rand() % 100 + 1; // Generating between 0 to 100;
+🔢 Random number generation every time
 
-    printf("Number generates is:%d",random);
+📝 Hints for wrong guesses
 
-    do
-    {
-        printf("\nPlease enter your Guess between(1 to 100):");
-        scanf("%d", &guess);
-        no_of_guess++;
+🎮 Tracks number of attempts
 
-        if (guess < random)
-        {
-            printf("Guess a larger number\n");
-        }
-        else if (guess > random)
-        {
-            printf("Guess a smaller number\n");
-        }
-        else
-        {
-            printf("Congratulations !!You have sucessfully guessed the nummber in %d attempt", no_of_guess);
-        }
+💡 Simple and great for beginners learning C programming
 
-    } while (guess != random);
+🚀 How to Run
 
-    printf("\n Bye Bye,Thanks for playing");
+Clone the repository
 
-    printf("\n Developed by:Rudra Sonvane");
+git clone https://github.com/your-username/guess-number-game.git
+cd guess-number-game
 
-    return 0;
-}
+
+Compile the program
+
+gcc guess_game.c -o guess_game
+
+
+Run the game
+
+./guess_game
+
+📌 Learning Goals
+
+This project is perfect for practicing:
+
+Loops (while, for)
+
+Conditional statements (if-else)
+
+Random number generation with rand()
+
+User input handling with scanf
+
+🖼️ Example Output
+Welcome to the Guess the Number Game!  
+I have selected a number between 1 and 100.  
+Can you guess it?  
+
+Enter your guess: 50  
+Too high! Try again.  
+
+Enter your guess: 25  
+Too low! Try again.  
+
+Enter your guess: 37  
+🎉 Congratulations! You guessed it in 3 attempts!
+
+🤝 Contributing
+
+Pull requests are welcome! If you have ideas to make the game more fun (like difficulty levels or scoreboards), feel free to contribute.
